@@ -1,6 +1,6 @@
 <?php
 
-class classes_Publication
+abstract class classes_Publication
 {
     public $id;
     public $title;
@@ -20,6 +20,8 @@ class classes_Publication
         $this->preview = $row['preview'];
 
     }
+
+    abstract function printItem();
 
 
 }
